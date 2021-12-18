@@ -1,0 +1,9 @@
+POST   http://localhost:4501/api/usuarios 
+Content-Type: application/json
+
+{
+    "nombre":"prueba1121",
+    "email":"carlosgbozzola@hotmail.com",
+    "password":"123456"
+    
+}

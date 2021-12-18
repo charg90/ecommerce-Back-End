@@ -1,0 +1,2 @@
+get http://localhost:4501/api/usuarios/61ab591ee95f7c075b260891
+Content-Type: application/json

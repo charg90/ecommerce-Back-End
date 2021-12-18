@@ -1,0 +1,3 @@
+get http://localhost:4501/api/productos
+content_type: "application/json"
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjE4YWVjM2MwMTliNWU2NWMwOTYyMjhiIn0sImlhdCI6MTYzODQ3NjU5MiwiZXhwIjoxNjM4NDgwMTkyfQ.0MJsnntbXbe4aMe68KSXyB-RQAPNf40uob_Gt9GW0Vs

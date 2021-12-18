@@ -1,0 +1,7 @@
+put http://localhost:4501/api/productos/61b3df4633fc5bca05e6b92b
+Content-Type: application/json
+
+
+{
+    "eliminado":false
+}

@@ -1,0 +1,13 @@
+POST  http://localhost:4501/api/productos
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjFhYjU5MWVlOTVmN2MwNzViMjYwODkxIn0sImlhdCI6MTYzOTA4ODUyMCwiZXhwIjoxNjM5MDkyMTIwfQ.j5asz-Pum3-OCxlSkqqQbHfUM6OwwT-0Sg3T4CGMGN4
+
+{
+    "eliminado":false,
+    "nombre":"computadora   ",
+    "precio":"7500",
+    "descripcion":"nuevo",
+    "usuario":"61bbb394319c6eb30879af4f"
+
+
+}

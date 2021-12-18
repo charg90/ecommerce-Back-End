@@ -1,0 +1,4 @@
+PATCH  http://localhost:4501/api/productos/61b3df4633fc5bca05e6b92b
+Content-Type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvIjp7ImlkIjoiNjFhM2RmMmMyMGM4MjYxMDgwMzM5MGE5In0sImlhdCI6MTYzOTA4NDQ1MCwiZXhwIjoxNjM5MDg4MDUwfQ.QSq5k8nVbH4ffQJUlNYUNcP3Jhls8n2wOrWJW-V0TpQ
+
