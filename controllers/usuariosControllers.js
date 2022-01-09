@@ -1,4 +1,5 @@
 const Usuario = require("./../models/usuariosModels");
+const Productos = require("./../models/productosModels");
 const bcryptjs = require("bcryptjs");
 const { validationResult } = require("express-validator");
 const productosController = require("./../models/productosModels");
@@ -60,4 +61,12 @@ exports.getUser = async (req, res) => {
   } catch (error) {
     res.status(400).send("usuario no existe");
   }
+};
+
+exports.getUserProducts = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const userProduct = await Productos.find({ usuario: id });
+    res.json(userProduct);
+  } catch (err) {}
 };

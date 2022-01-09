@@ -16,6 +16,7 @@ app.use("/api/login", require("./routes/login"));
 app.use("/api/productos", require("./routes/productos"));
 app.use("/api/productos/:id", require("./routes/productos"));
 app.use("/api/verify", require("./routes/verify"));
+app.use("/api/perfil", require("./routes/perfil"));
 app.listen(process.env.PORT, () => {
   console.log(`server on port ${process.env.PORT}`);
 });
