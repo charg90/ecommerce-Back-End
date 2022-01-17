@@ -20,6 +20,7 @@ exports.getProducts = async (req, res) => {
   }
 };
 // funcion encargada de crear producto
+
 exports.postProduct = async (req, res) => {
   try {
     const { nombre, precio, descripcion, usuario } = req.body;

@@ -21,6 +21,7 @@ const usuariosSchema = new Schema({
     type: Date,
   },
   uuid: { type: "string" },
+  img: { type: "string" },
   confirmacion: { type: Boolean, default: false },
   productos: [
     {

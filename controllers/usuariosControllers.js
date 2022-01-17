@@ -5,6 +5,7 @@ const { validationResult } = require("express-validator");
 const productosController = require("./../models/productosModels");
 const emailer = require("./../utils/emailer");
 const { v4: uuid } = require("uuid");
+const upload = require("../middleware/multer");
 
 exports.crearUsuario = async (req, res) => {
   // validar con express-validator si los datos llegaron correctamente
@@ -16,7 +17,7 @@ exports.crearUsuario = async (req, res) => {
   // creacion de usuario y validacion de que se crea no sea existente
 
   try {
-    const { email, password, nombre } = req.body;
+    const { email, password, nombre, img } = req.body;
     // a traves de funcion de mongoose compruebo de que mail exista
     let usuario = await Usuario.findOne({ email });
     usuario ? res.status(400).json("usuario ya registrado") : null;
@@ -29,6 +30,7 @@ exports.crearUsuario = async (req, res) => {
       email: email,
       password: password,
       uuid: uid,
+      img: img,
     });
     const salt = await bcryptjs.genSalt(10);
     usuario.password = await bcryptjs.hash(password, salt);

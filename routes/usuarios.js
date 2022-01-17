@@ -3,6 +3,7 @@ const router = express.Router();
 const usuarioController = require("./../controllers/usuariosControllers");
 // express validator extraigo check
 const { check } = require("express-validator");
+const upload = require("./../middleware/multer");
 
 router.post(
   "/",
@@ -13,6 +14,8 @@ router.post(
       min: 6,
     }),
   ],
+  upload.single("avatar"),
+
   usuarioController.crearUsuario
 );
 router.get("/:id", usuarioController.getUser);
