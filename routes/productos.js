@@ -6,5 +6,5 @@ router.get("/", productosController.getProducts);
 router.post("/", auth, productosController.postProduct);
 router.get("/:id", productosController.getSingle);
 router.put("/:id", auth, productosController.productUpdate);
-router.patch("/:id", productosController.productDelete);
+router.patch("/:id", auth, productosController.productDelete);
 module.exports = router;

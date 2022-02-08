@@ -5,6 +5,7 @@ const productosSchema = new Schema({
   nombre: String,
   precio: String,
   descripcion: String,
+  img: String,
 
   usuario: {
     type: Schema.Types.ObjectId,

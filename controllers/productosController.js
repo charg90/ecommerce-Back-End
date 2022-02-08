@@ -23,7 +23,7 @@ exports.getProducts = async (req, res) => {
 
 exports.postProduct = async (req, res) => {
   try {
-    const { nombre, precio, descripcion, usuario } = req.body;
+    const { nombre, precio, descripcion, usuario, img } = req.body;
     console.log(nombre, precio, descripcion, usuario);
     const user = await Usuario.findById(usuario);
     console.log(user.id);
@@ -31,6 +31,7 @@ exports.postProduct = async (req, res) => {
     const newProduct = new Productos({
       nombre: nombre,
       precio: precio,
+      img: img,
       descripcion: descripcion,
       eliminado: false,
       usuario: user._id,
@@ -64,7 +65,7 @@ exports.productUpdate = async (req, res) => {
   const options = { new: true };
   try {
     const update = await Productos.findByIdAndUpdate(id, updates, options);
-    res.status(200).json([update]);
+    res.status(200).json(update);
   } catch (err) {
     res.status(400).json(err);
   }

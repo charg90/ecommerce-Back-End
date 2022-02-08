@@ -1,7 +1,7 @@
-put http://localhost:4501/api/productos/61b3df4633fc5bca05e6b92b
+put http://localhost:4501/api/productos/61e9e75428a2ae20b024f5cc
 Content-Type: application/json
 
 
 {
-    "eliminado":false
+    "eliminado":true
 }
